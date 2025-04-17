@@ -1,16 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html id="html">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>square</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+
+  <div id="startScreen">
+    <h1>Square</h1>
+    <button id="startButton">Start</button>
+  </div>
+
+  <div id="store" class="hide">
+    <h1>Store</h1>
+    <button id="initGame">To Battle</button>
+  </div>
+  
+  <div id="gameScreen" class="hide">
+    <div id="score">Score: 0</div>
+    <canvas id="canvas" height="50" width="50"></canvas>
+  </div>
+
+  <div id="gameOver" class="hide">
+    <h1>Game Over</h1>
+    <h2>Score: <span id="deadScore"></span></h2>
+    <button id="deadToShop">Back to Shop</button>
+  </div>
+
+  <script src="./scripts/script.js" type="module"></script>
 </body>
 
 </html>
